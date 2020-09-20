@@ -1,6 +1,7 @@
 html, body {
   font-family: Roboto;
-  width: 1600px;
+  min-width: 1600px;
+  position: center;
   padding: 0;
   margin: 0;
 }
@@ -8,21 +9,38 @@ html, body {
 /*--------------------------------------*/
 /*--------------first page--------------*/
 header {
-  height: 95px;
-  width: 1600px;
+  height: 89px;
+  min-width: 1600px;
   font-size: 14px;
-  background: black url('img/logo.png') center no-repeat;  
+  background: black;
   color: white;  
+  padding-top: 4px;
+  margin:0;
   /*position: fixed;*/
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
-.header_page1 nav {  
-  width: 581px;
-  padding-top: 40px;
+header h1 {
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  color:rgb(189, 189, 189);
+}
 
-  margin-left: 502px;
+header nav {  
+  width: 582px;
+  height: 97px;
+  margin-left: 396px;
+
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.logo_header {
+  margin-bottom: 3px;
 }
 
 .menu_left a,
@@ -45,7 +63,7 @@ header {
 }
 
 .menu_right {
-  width: 160px; 
+  width: 162px; 
   display: flex;
   justify-content: space-between;
 }
@@ -66,6 +84,7 @@ header {
   margin-bottom: 21px;
   margin-left: 5px;
   letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .webdev span { 
@@ -79,7 +98,6 @@ header {
 }
 /*---interactive button---*/
 .body_for_butt {
-  margin-left: -2px;
 }
 .webdev_butt {
   font-size: 14px;
@@ -91,6 +109,7 @@ header {
   height: 46px;
   text-align: center;
   line-height: 47px;
+  text-transform: uppercase;
   letter-spacing: 0.1px;
   position: relative;
   background-color:  #00AFDB;
@@ -139,48 +158,49 @@ left: 0;
 }
 
 .social img:hover {
-  width: 60%;
-  position: static;
+  transform: scale(1.2);
 }
 
-
 .header_page1 {
-  height: 744px;
+  height: 650px;
   padding-top:1px;
   background-image: url('img/1page.jpg');
-  background-position: center;
-  background-size: cover;
+  background-position-y: -93px;
+ 
 }
 
 /*---------------------------------------*/
 /*-----------------second page ---------*/
-.rappresent {
-  padding-top: 2px;
-  margin:0;
-  height: 840px;
+.rappresent {  
+  height: 722px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 120px;
+}
+
+.rapp_container {
+  width: 1062px;
   display: flex;
   justify-content: space-between;
-  background-image: url("img/2page.png");
-  background-repeat: no-repeat;
-  background-position-x: 923px;
-  background-position-y: 120px;
+  align-items: center;
 }
 
 .rapp_text {
   width: 407px;
-  height: 235px;
-  margin-top: 292px;
-  padding-left: 10px;
-  margin-left: 258px;
+  height: 236px;
+  margin-bottom: 2px;
   }
 
 .rapp_text h2 {
+  text-transform: uppercase;
   letter-spacing: 1px;
   padding-right: 15px;
   margin-top: 0px;  
 }
 
 .rapp_text span {
+  padding-top: 2px;
   font-size: 14px;
   line-height: 1.3;
 }
@@ -201,6 +221,7 @@ left: 0;
   display: block;
   line-height: 47px;
   text-align: center;
+  text-transform: uppercase;
   position: relative;
 }
 
@@ -268,7 +289,8 @@ left: 0;
 }
 
 .our_community h4 {
-  margin-left: 3px;
+  text-transform: uppercase;
+  margin-left: 2px;
   letter-spacing: 2.4px;
   font-weight: 500;
   margin-bottom: 0;
@@ -280,7 +302,6 @@ left: 0;
   text-align: center;
   line-height: 20px;
   margin-top: 12px;
-
 }
 
 .our_com_slider {
@@ -293,12 +314,13 @@ left: 0;
 }
 
 .photo_selector {
-height: 30px;
-width: 79px;
-margin-left: 279px;
-margin-top: 2px;
-display: flex;
-justify-content: space-between;
+  height: 30px;
+  width: 79px;
+  margin-left: 273px;
+  padding-top: 3px;
+  display: flex;
+  justify-content: space-between;
+  transform: scale(1, 1.02);
 }
 
 .l_arrow {
@@ -319,17 +341,26 @@ justify-content: space-between;
   margin-top: 6px;  
 }
 
+.l_arrow:hover {
+  transform: rotate(-45deg) scale(1.4, 1.4);
+}
+
+.r_arrow:hover{
+  transform: rotate(45deg) scale(1.4, 1.4);
+}
+
 .photo_num {
   font-size: 18px;
-  padding: 0;
-  margin-right: 2px;
+  padding-left: 2px;
+  padding-right: 0px;;
+  letter-spacing: 3.9px;
 }
 
 .our_com_photo {
   width: 894px;
   height: 250px;
   padding: 0;
-  margin-top: 11px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   overflow: hidden;  
@@ -369,6 +400,7 @@ margin-right: 150px;
 
 .implement_text h2 {
   font-size: 24px;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 1px;
   margin-bottom: 25px;;
@@ -392,6 +424,7 @@ margin-right: 150px;
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
+  text-transform: uppercase;
   display: block;
   line-height: 47px;
   text-align: center;
@@ -432,7 +465,7 @@ margin-right: 150px;
 
 .subscribe {
   color: white;
-  height: 598px;
+  height: 524px;
   padding: 0;
   margin: 0;
   background-image: url('img/5page_background.png');
@@ -443,14 +476,17 @@ margin-right: 150px;
 }
 
 .subscribe section {
-  margin-bottom: 66px;
+  width: 406px;
+  height: 104px;
+  margin-bottom: 22px;
 }
 
 .subscribe h1 {
   font-size: 24px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-top: 5px;
+  text-transform: uppercase;
+  margin-top: 0px;
   padding-left: 13px;
 }
 
@@ -463,7 +499,8 @@ form {
   width: 315px;
   padding: 0px;
   border: 0;
-  text-align: justify;
+  text-align: start;
+  vertical-align: 25px;
   padding-left: 25px;
   padding-top: 3px;  
 }
@@ -473,9 +510,9 @@ form {
   width: 66px;
   border: 0;
   background-image: url("img/Page5_btn-submit.png");
-  background-size: 17px;
+  background-size: 16px;
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: 16px;
   background-position-x: 25px;
   background-color: #00AFDB;
 }
@@ -491,7 +528,7 @@ form {
 /*-------------6th page-------------*/
 
 .download {
-  height: 468px;
+  height: 464px;
   display: flex;
   justify-content: center;
   background-color: #F5F6F7;
@@ -508,6 +545,7 @@ form {
 
 .download h2 {
   letter-spacing: 1px;
+  text-transform: uppercase;
   margin-left: 1px;
   margin-bottom: 21px;
 }
@@ -523,57 +561,28 @@ form {
 }
 
 .download article {
-  width: 406px;
-  height: 50px;  
+  width: 402px;
+  height: 45px;  
   display: flex;
   justify-content: space-between;
   
 }
-/*
-.apple,
-.android {  
-  font-weight: 500;
-  font-size: 13px;
-  width: 188px;
-  height: 50px;
-  background-color: #00AFDB;
-  border: 0;
-  margin: 0px 15px 0px 15px;
-  color: white;
-  text-align: left;
-  padding-left: 20px;
-  padding-top: 5px;
-  font-weight: 700;
+
+.body_for_apple_butt span {
+  margin-left: 2px;
 }
 
-.apple {
-  background-image: url("img/download_apple.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-.android {
-  background-image: url("img/download_android.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  padding-left: 17px;
-  
-}*/
-
-.body_for_butt {
-  margin-left: -2px;
-}
 .apple_butt,
 .andr_butt {
+  width: 186px;
+  height: 46px;
   font-size: 14px;
   font-weight: 500;
   color: white;
   text-decoration: none;
-  display: block;
-  width: 188px;
-  height: 50px;
-  line-height: 53px;
-  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  display: block;  
+  line-height: 47px;
   position: relative;
   background-color:  #00AFDB;
   transition: .5s;
@@ -581,7 +590,7 @@ form {
 }
 
 .body_for_apple_butt span {
-  padding: 19px;
+  padding: 17px;
 }
 .body_for_andr_butt span {
   padding: 17px;
@@ -591,17 +600,31 @@ form {
   background-image: url(img/download_apple.png);
   background-repeat: no-repeat;
   background-position-x: right;
+  background-position-y: center;
 }
 .andr_butt {
   background-image: url(img/download_android.png);
   background-repeat: no-repeat;
   background-position-x: right;
+  background-position-y: -1px;
 }
 
-.apple_butt:hover,
-.andr_butt:hover {
+.apple_butt:hover {
   color:  white;
   z-index: 2;
+  background-image: url("img/Combined\ shape\ 755.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -2px;  
+}
+
+.andr_butt:hover {
+  background-image: url("img/Combined\ shape\ 2.png");
+  color:  white;
+  z-index: 2;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: -1px;
 }
 
 .apple_butt::before,
@@ -663,7 +686,7 @@ footer nav {
   width:235px;
   height: 16px;
   margin-top: 17px;
-  font-size: 10px;
+  font-size: 9px;
   display: flex;
   font-weight: 200;
   justify-content: space-between;
